@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "heroku-postbuild":"npm install && ng build --configuration production"
+    "heroku-postbuild":"ng build --configuration production && npm install -g @angular/cli@20.10.0"
   },
   "private": true,
   "dependencies": {
