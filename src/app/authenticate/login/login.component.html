@@ -1,0 +1,18 @@
+<div class="center-card">
+    <p-card header="Login" subheader="Login to access recipes" [style]="{ width: '360px' }">
+        <form [formGroup]="loginForm">
+            <span class="p-float-label mb-3">
+                <input pInputText id="email" formControlName="email" />
+                <label for="email">Email</label>
+            </span>
+            <span class="p-float-label">
+                <input pInputText id="password" formControlName="password" type="password" />
+                <label for="password">Password</label>
+            </span>
+        </form>
+        <ng-template pTemplate="footer">
+            <p-button label="Login" icon="pi pi-check" (click)="login()"></p-button>
+            <p-button label="Sign Up" icon="pi pi-times" routerLink="/auth/signup" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
+        </ng-template>
+    </p-card>
+</div>
